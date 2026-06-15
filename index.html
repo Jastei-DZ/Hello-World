@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #f7f6f2;
+            --color-surface: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-muted: #5a5a5a;
+            --color-accent: #1e4d35;
+            --color-accent-light: #2d6b4a;
+            --color-border: #e0ddd6;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--color-bg);
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--color-text);
+        }
+
+        .card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 3rem 4rem;
+            max-width: 640px;
+            width: 90%;
+        }
+
+        .label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--color-text);
+            letter-spacing: -0.02em;
+        }
+
+        .divider {
+            width: 2.5rem;
+            height: 3px;
+            background-color: var(--color-accent);
+            margin: 1.5rem 0;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">Dezernat Zukunft</div>
+        <h1>Hello World</h1>
+        <div class="divider"></div>
+        <p>Institut für Makrofinanzen — für eine zukunftsfähige Wirtschaftspolitik.</p>
+    </div>
+</body>
+</html>
